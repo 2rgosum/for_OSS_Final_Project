@@ -2,20 +2,19 @@
 
 from __future__ import print_function
 
-import os
-import sys
-import time
 import logging
-import tempfile
-import traceback
+import os
 import subprocess
-
-from shutil import disk_usage, rmtree
+import sys
+import tempfile
+import time
+import traceback
 from base64 import b64decode
+from shutil import disk_usage, rmtree
 
 try:
-    import pathlib
     import importlib.util
+    import pathlib
 except ImportError:
     pass
 
